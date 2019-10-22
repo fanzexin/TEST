@@ -1,0 +1,23 @@
+cd $CUX_TOP/forms/ZHS    --获取form文件路径
+cd $AU_TOP/forms/ZHS     --编译form文件的路径
+
+frmcmp_batch userid=apps/apps module=$AU_TOP/resource/INVLTENT.pll module_type=library
+
+frmcmp_batch userid=apps/apps module=$CUX_TOP/forms/ZHS/CUXSHIPPLAN_S.fmb output_file=$CUX_TOP/forms/ZHS/CUXSHIPPLAN_S.fmx
+
+frmcmp_batch userid=apps/apps module=$CUX_TOP/forms/ZHS/CUXSHNOT.fmb output_file=$CUX_TOP/forms/ZHS/CUXSHNOT.fmx
+
+
+frmcmp_batch userid=apps/apps module=$CUX_TOP/forms/ZHS/CUXINSEH.fmb output_file=$CUX_TOP/forms/ZHS/CUXINSEH.fmx
+
+
+
+frmcmp_batch userid=apps/sapaapps module=$CUX_TOP/forms/ZHS/CUXSHIPPLAN_S.fmb output_file=$CUX_TOP/forms/ZHS/CUXSHIPPLAN_S.fmx
+
+frmcmp_batch userid=apps/sapaapps module=$CUX_TOP/forms/US/CUXSHIPPLAN_S.fmb output_file=$CUX_TOP/forms/US/CUXSHIPPLAN_N.fmx
+
+
+
+frmcmp_batch userid=apps/apps module=$CUX_TOP/forms/ZHS/CUXSALESORDER.fmb output_file=$CUX_TOP/forms/ZHS/CUXSALESORDER.fmx  
+
+菜单：CUX_FOLDER_DEV
